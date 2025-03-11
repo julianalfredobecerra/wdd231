@@ -171,3 +171,7 @@ footer {
   color: white;
   padding: 5px;
 }
+
+#menu {
+  display: none;
+}

@@ -1,4 +1,4 @@
-@media (max-width: 768px) {
+@media (max-width: 720px) {
     main {
       grid-template-columns: 1fr;
       grid-template-areas:
@@ -12,7 +12,9 @@
       flex: 0 1 calc(100% - 1rem);
     }
     
+    /* Override the default hiding of the menu button */
     #menu {
+        display: block;  /* Ensure the button shows */
         font-size: 1.5rem;
         border: 0;
         background: none;
