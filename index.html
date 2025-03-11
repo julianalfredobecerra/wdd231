@@ -1,68 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Julian Becerra">
-    <title>Home Page</title>
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/larger.css">
-    <link rel="stylesheet" href="styles/small.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Julian Becerra">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/course.js" defer></script>
+  <script src="scripts/navigation.js" defer></script>
 </head>
 <body>
-    <header>
-        <div class="profile-header">
-            <img src="images/profile.webp" alt="Profile Photo" class="profile-pic"/>
-            <h1 class="site-title">Julian A. Becerra</h1>
-        </div>
-        <button type="button" id="menu"></button>
-        <nav class="navigation">
-            <a href="#">Home</a>
-            <a href="#">Chamber</a>
-            <a href="#">GitHub Profile</a>
-            <a href="#">LinkedIn</a>
-        </nav>
-    </header>
-    <main>
-        <h1>Home</h1>
-        <section class="course_work">
-          <h2>Course Work</h2>
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-        </section>
-        <section class="location">
-            <h2>Bogota, Colombia</h2>
-            <figure>
-                <img src="images/bogota.webp" alt="Bogota">
-                <figcaption>Torre Colpatria</figcaption>
-            </figure>
-        </section>
-        <section class="certificate">
-          <h2>Web and Computer Programming Certificate</h2>
-          <div class="filters">
-            <button class="active">All</button>
-            <button>CSE</button>
-            <button>WDD</button>
-          </div>
-          <div class="courses">
-            <div class="course">CSE 110</div>
-            <div class="course">WDD 130</div>
-            <div class="course">CSE 111</div>
-            <div class="course">CSE 210</div>
-            <div class="course">WDD 190</div>
-            <div class="course">WDD 231</div>
-          </div>
-        </section>
-      </main>
-    <footer>
-        <p> © <span id="currentyear"></span> | Julian Becerra | Bogota, Colombia</p>
-        <p id="lastModified"></p>
-    </footer>
-<script src="scripts/date.js"></script>
-<script src="scripts/course.js"></script>
-<script src="scripts/navigation.js"></script>
+  <header>
+    <div class="profile-header">
+      <img src="images/profile.webp" alt="Profile Photo" class="profile-pic"/>
+      <h1 class="site-title">Julian A. Becerra</h1>
+    </div>
+    <button type="button" id="menu"></button>
+    <nav class="navigation">
+      <a href="#">Home</a>
+      <a href="#">Chamber</a>
+      <a href="#">GitHub Profile</a>
+      <a href="#">LinkedIn</a>
+    </nav>
+  </header>
+  <main>
+    <h1>Home</h1>
+    <section class="course_work">
+      <h2>Course Work</h2>
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </section>
+    <section class="location">
+      <h2>Bogota, Colombia</h2>
+      <figure>
+        <img src="images/bogota.webp" alt="Bogota">
+        <figcaption>Torre Colpatria</figcaption>
+      </figure>
+    </section>
+    <section class="certificate">
+      <h2>Web and Computer Programming Certificate</h2>
+      <div class="filters">
+        <button class="active">All</button>
+        <button>CSE</button>
+        <button>WDD</button>
+      </div>
+      <div class="courses">
+        <div class="course">CSE 110</div>
+        <div class="course">WDD 130</div>
+        <div class="course">CSE 111</div>
+        <div class="course">CSE 210</div>
+        <div class="course">WDD 131</div>
+        <div class="course">WDD 231</div>
+      </div>
+      <p id="totalCredits"></p>
+    </section>
+  </main>
+  <footer>
+    <p> © <span id="currentyear"></span> | Julian Becerra | Bogota, Colombia</p>
+    <p id="lastModified"></p>
+  </footer>
 </body>
 </html>

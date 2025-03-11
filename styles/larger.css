@@ -131,7 +131,7 @@ h2 {
 }
 
 .filters button {
-  background: #663300;
+  background: black;
   color: #fff;
   border: none;
   padding: 0.5rem 1rem;
@@ -156,7 +156,7 @@ h2 {
 }
 
 .course {
-  background: #663300;
+  background: #672f1d;
   color: #fff;
   padding: 0.75rem 1rem;
   border-radius: 5px;
@@ -174,4 +174,8 @@ footer {
 
 #menu {
   display: none;
+}
+
+.completed {
+  background-color: rgb(123, 123, 123);
 }
