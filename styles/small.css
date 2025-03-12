@@ -58,4 +58,8 @@
     .open a {
         display: block;
     }
+
+    .active::before { 
+        content: "📍";
+    }
 }
