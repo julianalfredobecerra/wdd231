@@ -182,3 +182,4 @@ footer {
 
 .active::before { 
   content: "📍";
+}
