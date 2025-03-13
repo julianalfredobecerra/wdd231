@@ -179,3 +179,6 @@ footer {
 .completed {
   background-color: rgb(123, 123, 123);
 }
+
+.active::before { 
+  content: "📍";
