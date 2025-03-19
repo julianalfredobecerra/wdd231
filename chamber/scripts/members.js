@@ -66,23 +66,30 @@ window.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  let socket = new WebSocket("wss://yourserver.com");
+let socket = new WebSocket("wss://yourserver.com");
 
-  window.addEventListener("pagehide", () => {
+window.addEventListener("pagehide", () => {
     if (socket) {
-      socket.close();
+        socket.close();
     }
-  });
+});
 
-  window.addEventListener("pageshow", (event) => {
+window.addEventListener("pageshow", (event) => {
     if (event.persisted) {
-      reconnectWebSocket();
+        reconnectWebSocket();
     }
-  });
+});
   
-  function reconnectWebSocket() {
+function reconnectWebSocket() {
     socket = new WebSocket("wss://yourserver.com");
     socket.onopen = () => console.log("Reconnected WebSocket");
-  }
+}
   
-  
+const TerserPlugin = require("terser-webpack-plugin");
+
+module.exports = {
+  optimization: {
+    minimize: true,
+    minimizer: [new TerserPlugin()],
+  },
+};
