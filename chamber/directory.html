@@ -19,6 +19,7 @@
     <meta property="og:url" content="https://julianalfredobecerra.github.io/wdd231/index.html">
     <script src="scripts/date.js" defer></script>
     <script src="scripts/menu.js" defer></script>
+    <script src="scripts/members.js" defer></script>
 <body>
     <header>
         <div class="logo-container">
@@ -44,6 +45,18 @@
                 <img src="images/hero-small.webp" alt="Houses" width="500" loading="lazy">
             </picture>            
         </div>
+        <section class="directory">
+            <h2>Directory</h2>
+            <div class="view-toggle">
+              <button id="gridViewBtn" aria-label="Grid View" title="Grid View">
+                Grid
+              </button>
+              <button id="listViewBtn" aria-label="List View" title="List View">
+                List
+              </button>
+            </div>
+            <div id="members" class="cards grid-view"></div>
+          </section>
     </main>
     <footer>
         <div class="contact">

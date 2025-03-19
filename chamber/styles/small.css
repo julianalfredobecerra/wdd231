@@ -52,4 +52,8 @@
     .open a {
         display: block;
     }
+
+    .directory {
+        font-size: small;
+    }
 }

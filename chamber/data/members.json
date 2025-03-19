@@ -1,0 +1,80 @@
+[
+    {
+      "name": "Vi-Velo Vive la Bici",
+      "address": "Calle 82 # 112 F - 41",
+      "phone": "3115613893",
+      "website": "https://www.vivelabici.com",
+      "image": "images/vivelo.webp",
+      "membership_level": 3,
+      "category": "Bike Store",
+      "hours": "6:00 AM - 8:00 PM",
+      "owner": "Juan Rodriguez"
+    },
+    {
+      "name": "Brossty",
+      "address": "Carrera 112 G # 88 - 22",
+      "phone": "3125088547",
+      "website": "https://www.brossty.com",
+      "image": "images/brossty.webp",
+      "membership_level": 2,
+      "category": "Fast Food",
+      "hours": "8:00 AM - 6:00 PM",
+      "owner": "Carlos Lizarazo"
+    },
+    {
+      "name": "Buffalas",
+      "address": "Carrera 113 # 81 - 02",
+      "phone": "3193168813",
+      "website": "https://www.buffalas.com",
+      "image": "images/bufalas.webp",
+      "membership_level": 3,
+      "category": "Fast Food",
+      "hours": "7:00 AM - 9:00 PM",
+      "owner": "Soledad Carrillo"
+    },
+    {
+      "name": "Gogi Pets",
+      "address": "Carrera 111 A # 86 B - 34",
+      "phone": "3208601212",
+      "website": "https://www.gogipets.com",
+      "image": "images/gogi.webp",
+      "membership_level": 1,
+      "category": "Vet",
+      "hours": "10:00 AM - 7:00 PM",
+      "owner": "Sophia Martinez"
+    },
+    {
+      "name": "Procinal Cinemas",
+      "address": "Carrera 111 C # 86 - 74 Local 253",
+      "phone": "6017447070",
+      "website": "https://www.procinal.com",
+      "image": "images/procinal.webp",
+      "membership_level": 2,
+      "category": "Cinema",
+      "hours": "5:00 AM - 10:00 PM",
+      "owner": "Mark Johnson"
+    },
+    {
+      "name": "Quequitos Pan",
+      "address": "Calle 82 # 112 F - 51",
+      "phone": "2175552345",
+      "website": "https://www.quequitos.com",
+      "image": "images/quequitos.webp",
+      "membership_level": 1,
+      "category": "Bakery",
+      "hours": "9:00 AM - 6:00 PM",
+      "owner": "Lisa Anderson"
+    },
+    {
+      "name": "El Canton de Tijuana",
+      "address": "Carrera 113 # 86 C - 17",
+      "phone": "3054247985",
+      "website": "https://www.tijuana.com",
+      "image": "images/tijuana.webp",
+      "membership_level": 3,
+      "category": "Restaurant",
+      "hours": "11:00 AM - 10:00 PM",
+      "owner": "David Chang"
+    }
+  ]
+  
