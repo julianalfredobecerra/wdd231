@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Ciudadela Colsubsidio</title>
+    <meta name="description" content="Discover how Ciudadela Colsubsidio Chamber of Commerce supports local businesses with networking, advocacy, and growth opportunities. Join us to connect, collaborate, and thrive in our vibrant business community.">
+    <meta name="author" content="Julian Becerra">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta property="og:title" content="Ciudadela Colsubsidio | Directory">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://i.pinimg.com/736x/cc/4e/36/cc4e36ed907c905f5863c3f1fe560858.jpg">
+    <meta property="og:url" content="https://julianalfredobecerra.github.io/wdd231/chamber/directory.html">
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/logo.webp" alt="Logo" class="logo">
+            <div class="logo-text">
+                <h1>Ciudadela Colsubsidio</h1>
+                <h2>Chamber of Commerce</h2>
+            </div>
+        </div>
+        <button type="button" id="menu" aria-label="Open navigation menu"></button>
+        <nav class="navigation">
+            <a href="#" title="Home" class="active">Home</a>
+            <a href="#" title="Directory">Directory</a>
+            <a href="#">Join</a>
+            <a href="#">Discover</a>
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/hero-medium.webp" media="(min-width: 500px)">
+                <img src="images/hero-small.webp" alt="Houses" width="500">
+            </picture>            
+        </div>
+        <div class="events">
+            <h2>Upcoming Events</h2>
+            <ul class="event-list">
+                <li class="event-item">
+                    <span class="event-date">April 15</span>
+                    <span class="event-title">State of the Military</span>
+                </li>
+                <li class="event-item">
+                    <span class="event-date">April 25</span>
+                    <span class="event-title">Women in Business Breakfast</span>
+                </li>
+                <li class="event-item">
+                    <span class="event-date">May 8</span>
+                    <span class="event-title">Small Business Resource Panel</span>
+                </li>
+                <li class="event-item">
+                    <span class="event-date">May 15</span>
+                    <span class="event-title">Chamber Soccer Classic</span>
+                </li>
+                <li class="event-item">
+                    <span class="event-date">May 24</span>
+                    <span class="event-title">Quarterly Economic Outlook Forum</span>
+                </li>
+              </ul>
+        </div>
+        <div class="weather">
+            <p>The current temperature in Ciudadela Colsubsidio, Bogota is <span id="current-temp"></span></p>
+            <figure>
+                <img id="weather-icon" src="" alt="">
+                <figcaption></figcaption>
+            </figure>
+        </div>
+        <div class="spotlights">
+            <h2>Member Spotlights</h2>
+            <div class="spotlight">
+                <h3>Brightline Marketing Solutions</h3>
+                <div class="industry">Industry: Digital Marketing & Advertising</div>
+                <div class="highlight">
+                    <span class="label">Highlight:</span> Brightline Marketing has helped over 200 local businesses grow their online presence with custom strategies in SEO, social media, and content creation. Recently named one of the "Top 10 Marketing Agencies in the Region," Brightline is committed to helping small businesses shine in a digital world.
+                </div>
+                <div class="fun-fact">
+                    <span class="label">Fun Fact:</span> They offer free digital audits to Chamber members each quarter!
+                </div>
+            </div>
+            <div class="spotlight">
+                <h3>Green Horizon Solar</h3>
+                <div class="industry">Industry: Renewable Energy & Sustainability</div>
+                <div class="highlight">
+                    <span class="label">Highlight:</span> A leader in sustainable energy solutions, Green Horizon Solar recently completed the city's largest residential solar project. Their commitment to clean energy and community education makes them a shining example of innovation and impact.
+                </div>
+                <div class="connection">
+                    <span class="label">Chamber Connection:</span> Green Horizon regularly sponsors the Chamber’s Green Business Awards and hosts free energy workshops.
+                </div>
+            </div>
+            <div class="spotlight">
+                <h3>Cornerstone Coffee Co.</h3>
+                <div class="industry">Industry: Food & Beverage / Hospitality</div>
+                <div class="highlight">
+                    <span class="label">Highlight:</span> This family-owned café has become a local favorite for its community-first vibe, artisan brews, and support of local artists. Cornerstone recently expanded to a second location and continues to collaborate with neighborhood schools and nonprofits.
+                </div>
+                <div class="member-perk">
+                    <span class="label">Member Perk:</span> Chamber members receive 15% off catering and meeting space rentals.
+                </div>
+              </div>
+        </div>
+        <div class="calltoaction">
+            <h2>Become a Member Today</h2>
+            <p>Join our thriving community of local businesses and professionals by becoming a member of our Chamber of Commerce.<br>
+                As a member, you'll gain exclusive access to invaluable networking events, business development resources, and advocacy services that are designed to help your business grow.<br>
+                By joining, you become part of a collaborative network committed to fostering economic success and making a positive impact in our community.<br>
+                Take the first step toward unlocking new opportunities and building lasting relationships—join us today!</p>
+            <button>Learn More About Membership</button>
+        </div>
+    </main>
+    <footer>
+        <div class="contact">
+            <p><b>Ciudadela Colsubsidio Chamber of Commerce</b><br>
+            Calle 80 # 110<br>
+            Bogota, Colombia 111011<br>
+            <a href="mailto:info@ciudadela.org">info@ciudadela.org</a><br>
+            (223) 555-2300</p>
+        </div>
+        <nav class="sociallinks">
+            <a href="https://facebook.com">
+                <img src="images/facebook.svg" alt="Facebook">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.svg" alt="X">
+            </a>
+            <a href="https://tiktok.com">
+                <img src="images/tiktok.svg" alt="Instagram">
+            </a>
+        </nav>
+        <div class="footer-info">
+            <p>WDD231 Class Project</p>
+            <p>Julian Becerra</p>
+            <p> © <span id="currentyear"></span> Ciudadela Colsubsidio Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>
