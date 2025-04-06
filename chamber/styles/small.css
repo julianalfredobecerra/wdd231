@@ -56,4 +56,11 @@
     .directory {
         font-size: 12.5px;
     }
+
+    .homepage-section {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+
 }

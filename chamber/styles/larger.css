@@ -427,3 +427,22 @@ h1, h2, a, h3{
 .label {
   font-weight: bold;
 }
+
+.weather {
+  text-align: center;
+}
+
+.weather h2{
+  margin: .3rem 0;
+}
+
+.weather #description {
+  text-transform: capitalize;
+  margin: .3rem 0;
+}
+
+.weather #current-temp {
+  font-weight: bold;
+  font-size: 2rem;
+  margin: .3rem 0;
+}
