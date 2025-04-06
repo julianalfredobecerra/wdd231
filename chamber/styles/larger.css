@@ -161,141 +161,189 @@ h1, h2, a, h3{
     margin: 2rem auto;
     max-width: 1200px;
     padding: 0 1rem;
-  }
+}
   
-  .view-toggle {
+.view-toggle {
     display: flex;
     justify-content: flex-end;
     margin-bottom: 1rem;
     gap: 0.5rem;
-  }
+}
   
-  .view-toggle button {
+.view-toggle button {
     border: 1px solid #ccc;
     background: #fff;
     border-radius: 4px;
     padding: 0.5rem;
     cursor: pointer;
-  }
-  .view-toggle button:hover {
+}
+
+.view-toggle button:hover {
     background-color: #f0f0f0;
-  }
+}
   
-  .cards {
+.cards {
     width: 100%;
     margin: 0 auto;
-  }
+}
 
-  .hide {
+.hide {
     display: none;
-  }
+}
 
-  .cards.grid-view {
+.cards.grid-view {
     display: grid;
     gap: 1.5rem;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  }
+}
   
-  .member-card {
+.member-card {
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 1rem;
     text-align: center;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  }
+}
   
-  .member-card img.member-image {
+.member-card img.member-image {
     max-width: 150px;
     margin-bottom: 1rem;
-  }
+}
 
-  .cards.list-view {
+.cards.list-view {
     display: table;
     border-collapse: collapse;
-  }
+}
 
-  .list-header {
+.list-header {
     display: table-header-group;
     font-weight: bold;
     background-color: #e8f2f5;
     border: 1px solid #ccc;
     margin-bottom: 0.5rem;
-  }
-  .list-header span {
+}
+
+.list-header span {
     display: table-cell;
     padding: 0.75rem 1rem;
     border-right: 1px solid #ccc;
-  }
-  .list-header span:last-child {
-    border-right: none;
-  }
+}
 
-  .member-row {
+.list-header span:last-child {
+    border-right: none;
+}
+
+.member-row {
     display: table-row;
     background-color: #fdfdfd;
     border: 1px solid #ccc;
-  }
-  .member-row:nth-child(even) {
-    background-color: #f4f4f4;
-  }
+}
 
-  .member-row .cell {
+.member-row:nth-child(even) {
+    background-color: #f4f4f4;
+}
+
+.member-row .cell {
     display: table-cell;
     vertical-align: middle;
     padding: 0.75rem 1rem;
     border-right: 1px solid #ccc;
-  }
-  .member-row .cell:last-child {
-    border-right: none;
-  }
+}
 
-  .cards.list-view .member-image {
+.member-row .cell:last-child {
+    border-right: none;
+}
+
+.cards.list-view .member-image {
     display: none;
-  }
+}
   
-  .cell.website a {
+.cell.website a {
     color: #007BFF;
     text-decoration: none;
-  }
+}
 
-  .cell.website a:hover {
+.cell.website a:hover {
     text-decoration: underline;
-  }
+}
   
-  .active::before { 
+.active::before { 
     content: "📍";
-  }
+}
 
-  .calltoaction {
-    
-  }
+.homepage-section {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    gap: 40px;
+}
+  
+.left-content {
+    flex: 2;
+}
+  
+.calltoaction {
+    background-color: #ffffff;
+    padding: 40px 30px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+  
+.calltoaction h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+  
+.calltoaction p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #333;
+}
+  
+.calltoaction button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+  
+.calltoaction button:hover {
+    background-color: cornflowerblue;
+}
 
-  .events-section {
+.events-section {
     width: 400px;
     margin: 40px auto;
     text-align: center;
-  }
+}
 
-  .events-section h2 {
+.events-section h2 {
     font-size: 24px;
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+}
 
-  .events-section h2::before {
+.events-section h2::before {
     content: '📅';
     font-size: 24px;
     margin-right: 10px;
-  }
+}
 
-  .event-list {
+.event-list {
     padding: 0;
     margin: 20px 0;
-  }
+}
 
-  .event-item {
+.event-item {
     display: flex;
     justify-content: space-between;
     padding: 10px;
@@ -303,17 +351,34 @@ h1, h2, a, h3{
     margin-bottom: 4px;
     border-radius: 4px;
     text-align: left;
-  }
+}
 
-  .event-date {
+.event-date {
     font-weight: bold;
     width: 50px;
-  }
+}
 
-  .event-title {
+.event-title {
     flex-grow: 1;
     margin-left: 10px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-  }
+}
+
+.right-content {
+    flex: 1;
+}
+
+.weather h2 {
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.weather h2::before {
+  content: '🌤️';
+  font-size: 24px;
+  margin-right: 10px;
+}
