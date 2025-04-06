@@ -382,3 +382,48 @@ h1, h2, a, h3{
   font-size: 24px;
   margin-right: 10px;
 }
+
+.spotlight-section {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.spotlight-section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.spotlight {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.spotlight h3 {
+  margin-top: 0;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+}
+
+.spotlight h3::before {
+  content: "🌟";
+  margin-right: 10px;
+}
+
+.industry {
+  font-style: italic;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.highlight, .fun-fact, .member-perk, .connection {
+  margin-bottom: 10px;
+}
+
+.label {
+  font-weight: bold;
+}
