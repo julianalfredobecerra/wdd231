@@ -258,9 +258,62 @@ h1, h2, a, h3{
     color: #007BFF;
     text-decoration: none;
   }
+
   .cell.website a:hover {
     text-decoration: underline;
   }
+  
   .active::before { 
     content: "📍";
+  }
+
+  .calltoaction {
+    
+  }
+
+  .events-section {
+    width: 400px;
+    margin: 40px auto;
+    text-align: center;
+  }
+
+  .events-section h2 {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .events-section h2::before {
+    content: '📅';
+    font-size: 24px;
+    margin-right: 10px;
+  }
+
+  .event-list {
+    padding: 0;
+    margin: 20px 0;
+  }
+
+  .event-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f4f4f4;
+    margin-bottom: 4px;
+    border-radius: 4px;
+    text-align: left;
+  }
+
+  .event-date {
+    font-weight: bold;
+    width: 50px;
+  }
+
+  .event-title {
+    flex-grow: 1;
+    margin-left: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
