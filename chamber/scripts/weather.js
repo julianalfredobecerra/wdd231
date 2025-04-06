@@ -7,7 +7,7 @@ const myKey = "d99002e2377c11d2e2ea36284d32706d"
 const myLat = "4.721449349994602"
 const myLon = "-74.11584994690735"
 
-const myUrl = `//api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLon}&appid=${myKey}&units=imperial`;
+const myUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLon}&appid=${myKey}&units=imperial`;
 
 async function apiFetch() {
     try {
