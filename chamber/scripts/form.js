@@ -1,4 +1,4 @@
-document.getElementById('timestamp').value = new Date().toISOString();
+document.getElementById('timestamp').value = new Date().toLocaleString();
 
 function openModal(id) {
     document.getElementById(id).style.display = 'flex';
