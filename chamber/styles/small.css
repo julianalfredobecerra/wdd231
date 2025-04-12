@@ -62,5 +62,9 @@
         grid-template-columns: auto;
     }
 
+    .container {
+        flex-direction: column;
+    }
+
 
 }

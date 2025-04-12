@@ -19,7 +19,7 @@
     <meta property="og:url" content="https://julianalfredobecerra.github.io/wdd231/chamber/directory.html">
     <script src="scripts/date.js" defer></script>
     <script src="scripts/menu.js" defer></script>
-    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/form.js" defer></script>
 </head>
 <body>
     <header>
@@ -32,63 +32,108 @@
         </div>
         <button type="button" id="menu" aria-label="Open navigation menu"></button>
         <nav class="navigation">
-            <a href="#" title="Home" class="active">Home</a>
+            <a href="#" title="Home">Home</a>
             <a href="#" title="Directory">Directory</a>
-            <a href="#">Join</a>
+            <a href="#" title-="Join" class="active">Join</a>
             <a href="#">Discover</a>
         </nav>
     </header>
+    <div class="hero">
+        <picture>
+            <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
+            <source srcset="images/hero-medium.webp" media="(min-width: 500px)">
+            <img src="images/hero-small.webp" alt="Houses" width="500">
+        </picture>          
+    </div>
     <main>
-        <div class="hero">
-            <picture>
-                <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
-                <source srcset="images/hero-medium.webp" media="(min-width: 500px)">
-                <img src="images/hero-small.webp" alt="Houses" width="500">
-            </picture>          
-        </div>
-        <form method="get" action="thankyou.html">
-            <label for="firstName">First Name:</label>
-            <input type="text" id="firstName" name="firstName" title="Applicant's First Name" required autocomplete="given-name">
-            <br><br>
-
-            <label for="lastName">Last Name:</label>
-            <input type="text" id="lastName" name="lastName" title="Applicant's Last Name" required autocomplete="given-name">
-            <br><br>
-
-            <label for="orgTitle">Organizational Title:</label>
-            <input type="text" id="orgTitle" name="orgTitle" title="Organizational Title" autocomplete="organization-title" pattern="[A-Za-z\s-]{7,}" placeholder="e.g., Senior-Manager">
-            <br><br>
-
-            <label for="email">Email Address:</label>
-            <input type="email" id="email" name="email" title="Email Address" required autocomplete="email" placeholder="name@example.com">
-            <br><br>
-
-            <label for="phone">Mobile Phone Number:</label>
-            <input type="tel" id="phone" name="phone" title="Mobile Phone Number" required autocomplete="tel">
-            <br><br>
-
-            <label for="orgName">Business/Organization's Name:</label>
-            <input type="text" id="orgName" name="orgName" title="Organization Name" required autocomplete="organization">
-            <br><br>
-
-            <label for="membership">Membership Level:</label>
-            <select id="membership" name="membership" title="Membership Level">
-                <option value="np_membership">NP Membership (Non Profit, No Fee)</option>
-                <option value="bronze">Bronze Membership</option>
-                <option value="silver">Silver Membership</option>
-                <option value="gold">Gold Membership</option>
-            </select>
-            <br><br>
-
-            <label for="orgDescription">Business/Organization's Description:</label>
-            <textarea id="orgDescription" name="orgDescription" title="Business/Organization Description"></textarea>
-            <br><br>
-
-            <input type="hidden" id="timestamp" name="timestamp">
-
-            <input type="submit" value="Submit">
+        <div class="container">
+            <div class="form-section">
+                <h2>Membership Application Form</h2>
+                <form method="get" action="thankyou.html">
             
-        </form>
+                    <label>First Name:<input type="text" name="firstName" title="Applicant's First Name" required autocomplete="given-name"></label>
+
+                    <label>Last Name:<input type="text" name="lastName" title="Applicant's Last Name" required autocomplete="family-name"></label>
+
+                    <label>Organizational Title:<input type="text" name="orgTitle" title="Organizational Title" autocomplete="organization-title" pattern="[A-Za-z\s-]{7,}" placeholder="e.g., Senior-Manager"></label>
+
+                    <label>Email Address:<input type="email" name="email" title="Email Address" required autocomplete="email" placeholder="name@example.com"></label>
+
+                    <label>Mobile Phone Number:<input type="tel" name="phone" title="Mobile Phone Number" required autocomplete="tel"></label>
+
+                    <label>Business/Organization's Name:<input type="text" name="orgName" title="Organization Name" required autocomplete="organization"></label>
+
+                    <label>Membership Level:<select name="membership" title="Membership Level">
+                        <option value="np_membership">NP Membership (Non Profit, No Fee)</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select></label>
+
+                    <label>Business/Organization's Description:<textarea name="orgDescription" title="Business/Organization Description"></textarea></label>
+
+                    <input type="hidden" name="timestamp" id="timestamp">
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+
+            <div class="cards-section">
+                <h2>Membership Levels</h2>
+                
+                <div class="card">
+                <h3>Non Profit Membership Level</h3>
+                <a href="#" onclick="openModal('npModal')">Learn More</a>
+                </div>
+
+                <div class="card">
+                <h3>Bronze Membership Level</h3>
+                <a href="#" onclick="openModal('bronzeModal')">Learn More</a>
+                </div>
+            
+                <div class="card">
+                <h3>Silver Membership Level</h3>
+                <a href="#" onclick="openModal('silverModal')">Learn More</a>
+                </div>
+                
+                <div class="card">
+                <h3>Gold Membership Level</h3>
+                <a href="#" onclick="openModal('goldModal')">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="npModal" class="modal">
+            <div class="modal-content">
+              <span class="close" onclick="closeModal('npModal')">&times;</span>
+              <h3>Non Profit Membership</h3>
+              <p>No membership fee. Access to community events and limited advertising slots.</p>
+            </div>
+        </div>
+          
+        <div id="bronzeModal" class="modal">
+            <div class="modal-content">
+              <span class="close" onclick="closeModal('bronzeModal')">&times;</span>
+              <h3>Bronze Membership</h3>
+              <p>Basic event access, quarterly training webinars, and organization listing on our website.</p>
+            </div>
+        </div>
+          
+        <div id="silverModal" class="modal">
+            <div class="modal-content">
+              <span class="close" onclick="closeModal('silverModal')">&times;</span>
+              <h3>Silver Membership</h3>
+              <p>Includes Bronze benefits plus spotlight positions on the homepage, priority event registration, and discounts.</p>
+            </div>
+        </div>
+          
+        <div id="goldModal" class="modal">
+            <div class="modal-content">
+              <span class="close" onclick="closeModal('goldModal')">&times;</span>
+              <h3>Gold Membership</h3>
+              <p>All Silver benefits plus exclusive training, premium advertising, VIP access to events, and more.</p>
+            </div>
+        </div>
     </main>
     <footer>
         <div class="contact">
