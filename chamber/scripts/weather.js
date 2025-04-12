@@ -29,7 +29,7 @@ function displayResults(data) {
     myDescription.innerHTML = data.weather[0].description
     currentTemp.innerHTML = `${data.main.temp}&deg;F`
     const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
-    weatherIcon.setAttribute("SRC", iconsrc)
+    weatherIcon.setAttribute("src", iconsrc)
     weatherIcon.setAttribute("alt", data.weather[0].description)
 }
 
